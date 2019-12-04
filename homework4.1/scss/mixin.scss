@@ -1,0 +1,29 @@
+@mixin but-col-gen {
+border-color: $colbut;
+color:  $colbut;
+border:1px solid;
+}
+@mixin pad-l-r-10 {
+  padding-left: $pad-10; 
+  padding-right: $pad-10;
+}
+@mixin pad-t-b-5 {
+  padding-top: $pad-5;
+  padding-bottom: $pad-5;
+}
+@mixin pad-all-10 {
+  padding-left: $pad-10px; 
+  padding-right: $pad-10px;
+  padding-top: $pad-10px;
+  padding-bottom: $pad-10px;
+}
+@mixin progress($height,$width,$background-color,$border-radius...) {
+  height:$height;
+  width:$width;
+  background-color:$background-color;
+  border-radius:$border-radius;
+  -webkit-border-radius:$border-radius;
+  -moz-border-radius:$border-radius;
+  -ms-border-radius:$border-radius;
+  -o-border-radius:$border-radius;
+}
