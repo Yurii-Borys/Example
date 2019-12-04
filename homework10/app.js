@@ -65,10 +65,9 @@ let next=document.querySelector('.next');
 next.addEventListener('click', nextPages);
 
 function nextPages () {
-      startPages++;
-      previous.disabled=false;
-     
-return search(startPages);
+    startPages++;
+    previous.disabled=false;
+    return search(startPages);
 }
 
 let previous=document.querySelector('.previous');
@@ -85,28 +84,29 @@ return search(startPages);
 //number from 1 to 3
 
 let one=document.querySelector('.one');
-one.addEventListener('click',changeNumberOne);
 let two=document.querySelector('.two');
-two.addEventListener('click',changeNumberTwo);
 let three=document.querySelector('.three');
-three.addEventListener('click',changeNumberThree);
-previous.disabled=true;
 
+one.addEventListener('click',changeNumberOne);
+two.addEventListener('click',changeNumberTwo);
+three.addEventListener('click',changeNumberThree);
+
+previous.disabled=true;
 
 function changeNumberOne () {
-startPages=one.value;
-previous.disabled=true;
-return search(startPages);
+    startPages=one.value;
+    previous.disabled=true;
+    return search(startPages);
 }
 
 function changeNumberTwo () {
-startPages=two.value;
-previous.disabled=false;
-return search(startPages);
+    startPages=two.value;
+    previous.disabled=false;
+    return search(startPages);
 }
 
 function changeNumberThree () {
-startPages=three.value;
-previous.disabled=false;
-return search(startPages);
+    startPages=three.value;
+    previous.disabled=false;
+    return search(startPages);
 }
